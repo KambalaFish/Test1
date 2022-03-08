@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /contacts
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: localhost:3005
+
+# Sitemaps
+Sitemap: localhost:3005/sitemap.xml
+Sitemap: localhost:3005/server-sitemap.xml
