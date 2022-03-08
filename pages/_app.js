@@ -11,6 +11,7 @@ import queryString from 'query-string';
 import {lightPalette} from "../theme/lightPalette";
 import {palette} from "../theme/palette";
 import {yandexPalette} from "../theme/yandexPalette";
+import Head from "next/head";
 
 function isObjEmpty(obj) {
     for(var i in obj)
@@ -44,6 +45,9 @@ function MyApp({Component, pageProps}) {
     },[router.asPath.split('?')[1]]);
 
     return <ThemeProvider theme={curTheme}>
+        <Head>
+            <meta name="google-site-verification" content="jMG2Byn9WnkftbrbxVgaHKoOeQspHGevYJ-KRBVe9qI" />
+        </Head>
         <Global/>
         <Header/>
         <Component {...pageProps}/>
