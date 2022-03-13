@@ -8,6 +8,12 @@ module.exports = {
         policies: [
             {userAgent: "*", disallow:"/contacts"},
             {userAgent: "*", allow:"/"},
+            {userAgent: "*", allow:"/services"},
+            {userAgent: "*", allow:"/services/massage"},
+            {userAgent: "*", allow:"/services/dental"},
+            {userAgent: "*", allow:"/services/vision"},
+            {userAgent: "*", allow:"/privacyPolicy"},
+            {userAgent: "*", allow:"/termsOfUse"},
         ],
         additionalSitemaps: [`${siteUrl}/server-sitemap.xml`]
     },
