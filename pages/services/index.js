@@ -20,6 +20,7 @@ export default function Index({services}) {
     return <Page label={'Our services'} description={"Those are the categories of services we provide:"}>
         <Head>
             <title>Categories of medical services you can book | DoctorBook!</title>
+            <link rel={'canonical'} href={`services`}/>
             <meta name="description" content={serviceNames+"are available for booking."}/>
             <meta property={"og:title"} content={"Categories of medical services you can book | DoctorBook!"}/>
             <meta property={"og:description"} content={serviceNames+"are available for booking."}/>
