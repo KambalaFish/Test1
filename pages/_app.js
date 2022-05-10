@@ -48,6 +48,7 @@ function MyApp({Component, pageProps}) {
         <Head>
             <meta name="google-site-verification" content="jMG2Byn9WnkftbrbxVgaHKoOeQspHGevYJ-KRBVe9qI" />
             <meta name="yandex-verification" content="123ac2b866c41d51" />
+            <meta name="yandex-verification" content="4f4f71378d43120a" />
         </Head>
         <Global/>
         <Header/>
