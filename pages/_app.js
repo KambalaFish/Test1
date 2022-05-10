@@ -47,6 +47,7 @@ function MyApp({Component, pageProps}) {
     return <ThemeProvider theme={curTheme}>
         <Head>
             <meta name="google-site-verification" content="jMG2Byn9WnkftbrbxVgaHKoOeQspHGevYJ-KRBVe9qI" />
+            <meta name="yandex-verification" content="123ac2b866c41d51" />
         </Head>
         <Global/>
         <Header/>

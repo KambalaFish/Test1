@@ -30,7 +30,7 @@ const PageDescription = styled.span`
   margin: 0 0 25px 0;
 `;
 
-export default function Service({category, products}){
+export default function Service({category, products, slug}){
     const router = useRouter();
     return <Page label={category.name} description={category.description}>
         <Head>
@@ -72,7 +72,8 @@ export async function getServerSideProps(ctx){
     return {
         props:{
             category,
-            products
+            products,
+            slug
         }
     }
 }

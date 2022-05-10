@@ -6,6 +6,30 @@ Disallow: /contacts
 User-agent: *
 Allow: /
 
+# *
+User-agent: *
+Allow: /services
+
+# *
+User-agent: *
+Allow: /services/massage
+
+# *
+User-agent: *
+Allow: /services/dental
+
+# *
+User-agent: *
+Allow: /services/vision
+
+# *
+User-agent: *
+Allow: /privacyPolicy
+
+# *
+User-agent: *
+Allow: /termsOfUse
+
 # Host
 Host: localhost:3005
 
