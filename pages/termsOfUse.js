@@ -6,26 +6,28 @@ import Head from "next/head";
 const WordpressPageContent = styled.div`
 `
 
-export default function TermsOfUse({page}) {
+// export default function TermsOfUse({page}) {
+export default function TermsOfUse() {
     return (
-        <Page label={page.title.rendered}>
+        // <Page label={page.title.rendered}>
+        <Page label={"Terms of use"}>
             <Head>
                 <title>Terms of use | DoctorBook!</title>
                 <meta name={"description"} content={"DoctorBook! booking service terms of use"}/>
                 <meta property={"og:title"} content={"Terms of use | DoctorBook!"}/>
                 <meta property={"og:description"} content={"DoctorBook! booking service terms of use"}/>
             </Head>
-            <WordpressPageContent dangerouslySetInnerHTML={{__html: page.content.rendered}}/>
+            {/*<WordpressPageContent dangerouslySetInnerHTML={{__html: page.content.rendered}}/>*/}
         </Page>
     );
 }
 
-export async function getStaticProps(){
-    const page = await getPageBySlug('terms-and-conditions');
-    console.log(page);
-    return {
-        props:{
-            page
-        }
-    }
-}
+// export async function getStaticProps(){
+//     const page = await getPageBySlug('terms-and-conditions');
+//     console.log(page);
+//     return {
+//         props:{
+//             page
+//         }
+//     }
+// }

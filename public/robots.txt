@@ -1,9 +1,5 @@
 # *
 User-agent: *
-Disallow: /contacts
-
-# *
-User-agent: *
 Allow: /
 
 # *
@@ -22,17 +18,9 @@ Allow: /services/dental
 User-agent: *
 Allow: /services/vision
 
-# *
-User-agent: *
-Allow: /privacyPolicy
-
-# *
-User-agent: *
-Allow: /termsOfUse
-
 # Host
-Host: localhost:3005
+Host: localhost:3000
 
 # Sitemaps
-Sitemap: localhost:3005/sitemap.xml
-Sitemap: localhost:3005/server-sitemap.xml
+Sitemap: localhost:3000/sitemap.xml
+Sitemap: localhost:3000/server-sitemap.xml
