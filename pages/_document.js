@@ -36,6 +36,17 @@ export default class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"true"}/>
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
                           rel="stylesheet"/>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS9CW6KG73"/>
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html:`
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-YS9CW6KG73');
+                        `
+                        }}
+                    />
                 </Head>
                 <body>
                 <Main/>
