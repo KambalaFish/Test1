@@ -6,6 +6,7 @@ import Image from "next/image";
 import {Container, Card, ImageContainer, CardDescription, Price} from "../../components/Card";
 import Link from "next/link";
 import Head from "next/head";
+import {useTheme} from "styled-components";
 import {theme} from "../../theme/theme";
 import {palette} from "../../theme/palette";
 
