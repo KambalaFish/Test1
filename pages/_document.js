@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
                               function gtag(){dataLayer.push(arguments);}
                               gtag('js', new Date());
                             
-                              gtag('config', 'G-L7GQJJRTF7');
+                              gtag('config', 'G-L7GQJJRTF7', {'debug_mode': true});
                             `
                         }}
                     />

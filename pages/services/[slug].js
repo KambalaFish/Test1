@@ -47,9 +47,9 @@ export default function Service({category, products, slug}){
             {products.map(product => (
                 <Card key={product.id} href={product.permalink} target="_blank" onClick={()=>{
                     if (curtheme.palette.page.backgroundColor === theme(palette).palette.page.backgroundColor)
-                        window.gtag('event', 'click', {value: 1});
+                        window.gtag('event', 'click', {value: 1, 'debug_mode': true});
                     else
-                        window.gtag('event', 'click', {value: 2});
+                        window.gtag('event', 'click', {value: 2, 'debug_mode': true});
                 }}>
                     <ImageContainer>
                         <Image
