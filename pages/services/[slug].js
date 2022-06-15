@@ -6,6 +6,8 @@ import Image from "next/image";
 import {Container, Card, ImageContainer, CardDescription, Price} from "../../components/Card";
 import Link from "next/link";
 import Head from "next/head";
+import {theme} from "../../theme/theme";
+import {palette} from "../../theme/palette";
 
 // export const CardDescription = styled.span`
 //   font-weight: bold;
@@ -32,6 +34,7 @@ const PageDescription = styled.span`
 
 export default function Service({category, products, slug}){
     const router = useRouter();
+    const curtheme = useTheme();
     return <Page label={category.name} description={category.description}>
         <Head>
             <title>{category.name} | DoctorBook!</title>
@@ -41,7 +44,12 @@ export default function Service({category, products, slug}){
         </Head>
         <Container>
             {products.map(product => (
-                <Card key={product.id} href={product.permalink} target="_blank">
+                <Card key={product.id} href={product.permalink} target="_blank" onClick={()=>{
+                    if (curtheme.palette.page.backgroundColor === theme(palette).palette.page.backgroundColor)
+                        window.gtag('event', 'click', {value: 1});
+                    else
+                        window.gtag('event', 'click', {value: 2});
+                }}>
                     <ImageContainer>
                         <Image
                             src={product.images[0].src}
