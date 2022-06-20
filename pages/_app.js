@@ -30,13 +30,13 @@ function MyApp({Component, pageProps}) {
         if(!isObjEmpty(searchParams)){
             console.log(searchParams);
             const parsedSearchParams = queryString.parse(searchParams);
-            const {utm_source} = parsedSearchParams;
-            switch (utm_source){
-                case 'yandex':
+            const {utm_content} = parsedSearchParams;
+            switch (utm_content){
+                case 'theme1':
                     console.log("hvzhk");
                     setTheme(theme(yandexPalette));
                     break;
-                case 'google':
+                case 'theme2':
                     console.log('googleHvzhk');
                     setTheme(theme(palette));
                     break;
