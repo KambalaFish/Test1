@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
     return (
         // <Page label={'Политика конфиденциальности'}>
         // <Page label={page.title.rendered}>
-        <Page label={'Политика конфиденциальности'}>
+        <Page label={'Privacy policy'}>
             <Head>
                 <title>Privacy policy | DoctorBook!</title>
                 <meta name={"description"} content={"DoctorBook! booking service privacy policy"}/>
