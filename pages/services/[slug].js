@@ -65,7 +65,7 @@ export default function Service({category, products, slug}){
                         {product.name}
                     </CardDescription>
                     <Price>
-                        от {product.price}
+                        from {product.price}
                     </Price>
                 </Card>
             ))}

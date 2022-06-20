@@ -125,6 +125,6 @@ export const Price = styled.span`
   width: max-content;
   
   :after{
-    content: "₽";
+    content: "$";
   }
 `
