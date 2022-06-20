@@ -125,8 +125,7 @@ export const Footer = () => (
             </Column>
             <Column>
                 <InfoLabel>Address</InfoLabel>
-                {/*Белгородская область. Село Таврово. Проспект Героев, 20.*/}
-                <Text>Urypinsk. Gryaznyh gusei street, 94.</Text>
+                <Text>401 Congress Pkwy, Crystal Lake, IL 60014, United States</Text>
             </Column>
             <Column>
                 <InfoLabel>Working hours</InfoLabel>
